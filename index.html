@@ -10,8 +10,8 @@
       window.onload = () => {
         let counter = 0;
         let greeting = setInterval(() => {
-          document.body.innerHTML += 'Hello, world! ';
-          if(++counter >= 1000)
+          document.body.innerHTML += '<font style="font-size:${counter}px">Hello, world!</font> ';
+          if(++counter >= 100)
             clearInterval(greeting);
         }, 10);
       }
