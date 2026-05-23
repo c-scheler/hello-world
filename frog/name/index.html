@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frog Name</title>
+  </head>
+  <body>
+    <h1>This frog's name is:</h1>
+    <p id="frogname"></p>
+
+    <script>
+      const names = ["Alfredo", "Alberto", "Al Capone"];
+      window.onload = () => {
+          frogname.innerHTML = names[Math.floor(Math.random()*names.length)];
+      }
+    </script>
+  </body>
+</html>
