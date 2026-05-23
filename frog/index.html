@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Frog</title>
+  </head>
+  <body>
+    <h1>Froggy!</h1>
+
+    <script>
+      window.onload = () => {
+        let counter = 0;
+        let greeting = setInterval(() => {
+          document.body.innerHTML += `<font style="font-size:${counter}px">🐸</font> `;
+          if(++counter >= 100)
+            clearInterval(greeting);
+        }, 10);
+      }
+    </script>
+  </body>
+</html>
